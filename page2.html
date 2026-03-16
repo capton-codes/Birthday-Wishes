@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Birthday Note</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&amp;family=Caveat:wght@400;600;700&amp;display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="h-full bg-purple-50 flex flex-col items-center justify-center">
+  <!-- MAIN WRAPPER - YAHAN SE START -->
+  <div id="app-wrapper" class="w-full h-full overflow-auto relative" style="background: linear-gradient(135deg, #fdf2f8 0%, #fce7f3 30%, #fbcfe8 60%, #f9a8d4 100%);">
+    
+    <!-- Confetti container -->
+    <div id="confetti-container" class="absolute inset-0 overflow-hidden pointer-events-none" style="z-index: 50;"></div>
+    
+    <!-- Floating stars bg -->
+    <div class="absolute inset-0 pointer-events-none overflow-hidden" style="z-index:1;">
+      <span style="position:absolute; top:8%; left:12%; font-size:20px; animation: twinkle 2.5s ease-in-out infinite;">⭐</span>
+      <span style="position:absolute; top:15%; right:15%; font-size:16px; animation: twinkle 3s 0.5s ease-in-out infinite;">✨</span>
+      <span style="position:absolute; top:40%; left:5%; font-size:14px; animation: twinkle 2s 1s ease-in-out infinite;">💫</span>
+      <span style="position:absolute; top:60%; right:8%; font-size:18px; animation: twinkle 2.8s 0.3s ease-in-out infinite;">⭐</span>
+      <span style="position:absolute; top:75%; left:18%; font-size:12px; animation: twinkle 3.2s 0.8s ease-in-out infinite;">✨</span>
+      <span style="position:absolute; top:25%; left:80%; font-size:15px; animation: twinkle 2.3s 1.2s ease-in-out infinite;">💫</span>
+    </div>
+
+    <!-- Main content - CENTERED -->
+    <div class="flex flex-col items-center justify-center min-h-full px-4 py-10">
+      
+      <!-- Wish message -->
+      <div class="scale-in-d3 text-center max-w-2xl mx-auto mt-10 mb-4 px-6 py-5 rounded-3xl relative" style="background: rgba(255,255,255,0.65); backdrop-filter: blur(8px); border: 2px solid rgba(236,72,153,0.2);">
+        <p id="main-wish" style="font-family: 'Baloo 2', cursive; font-size: 20px; font-weight: 600; color: #be185d; line-height: 1.5;">
+          Happy Birthday! <br/>
+          I still wonder how one person can be this entertaining and this dramatic at the same time.<br/>
+          Thank you for trusting me with all your secrets☺️.I was your personal Secrets hider 🫣 and part-time Gasoos.
+          Don’t worry, Everything you told me is safely locked… unless someone offers me a lifetime supply of snacks😁. 
+          Then we might need to negotiate.😉<br/> 
+          And let’s not forget our Hilarious😂 moments, random conversations, and those Truth or Dare😁 situations that,
+          somehow always end in embarrassment for one of us🫣. Life in class would be way too boring without those moments.<br/>
+          We used to stay up late talking about everything🫠, now we barely talk unless there’s work. 
+          That's funny how silence slowly changed our friendship that once meant so much (especially for me)😶<br/>
+          Oh! By the way jokes apart, you’re genuinely a great friend. I’m really glad we became friends🙃.
+          I hope this year brings you success, happiness, and lots of good memories😇. 
+          May you get everything you wish for☺️<br/> So, Enjoy your Day🎂💕
+        </p>
+      </div>
+
+      <!-- Button back to main card -->
+      <div class="flex justify-center mt-6 mb-10">
+        <a href="index.html" class="px-6 py-3 bg-purple-500 text-white rounded hover:bg-pink-600">
+          Back to Main
+        </a>
+      </div>
+      
+    </div> <!-- End main content -->
+    
+  </div> <!-- End app-wrapper -->
+</body>
+</html>
